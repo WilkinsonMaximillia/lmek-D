@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lmek-D
+  name: lmek12
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lmek-D
+      app: lmek12
   template:
     metadata:
       labels:
-        app: lmek-D
+        app: lmek12
     spec:
       containers:
-      - image: okteto.dev/lmek-D:latest
-        name: lmek-D
+      - image: okteto.dev/lmek12:latest
+        name: lmek12
         ports:
         - containerPort: 8080
         env:
